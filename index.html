@@ -1,22 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <title>Portfolio</title>
+   
+   <link rel="stylesheet" href="style.css">
+   
+   
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+      
+      body {
+         background-color: rgb(0, 0, 33);
+         color: white;
+      }
+      
+      nav {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 50px;
+      }
+      
+      nav ul {
+         display: flex;
+         justify-content: center;
+      }
+      
+      nav ul li {
+         list-style: none;
+         margin: 0 23px;
+      }
+      
+      nav ul li a {
+         text-decoration: none;
+         color: white;
+         transition: 0.2s;
+      }
+      
+      nav ul li a:hover {
+         color: blueviolet;
+         font-size: 1.4rem;
+         z-index: 1;
+         translate: 0 0 10px;
+      }
+      
+      .left {
+         font-size: 1.6rem;
+      }
+      /*------------INTRODUCTION--------------*/
+      .intro {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      
+      .intro>div {
+         margin: 20px;
+      }
+      
+      .intro .leftsection {
+         width: 40%;
+         height: 500px;
+         font-size: 2.5rem;
+         align-content: center;
+         justify-content: center;
+      }
+      
+      .intro .rightsection {
+         width: 40%;
+         height: 500px;
+         display: flex;
+         align-items: center;
+      }
+      
+      .intro .rightsection img {
+         border-radius: 50%;
+         width: 100%;
+         box-shadow: 0 0 20px #35BCC6;
+      }
+      
+      #element {
+         color: #9628E8;
+      }
+      
+      .ishant {
+         color: #9628E8;
+      }
+      
+      .intro .leftsection .btn {
+         background-color: #6700B3;
+         border: 0.5px solid #541D7C;
+         border-radius: 10px;
+         color: white;
+         padding: 10px;
+         position: relative;
+         box-shadow: 0 0 10px #541D7C;
+         transition: 0.5s;
+      }
+      .intro .leftsection .btn:hover{
+         background-color: #9608FF;
+         border: 2px solid #6700B3;
+         border-radius: 10px;
+         color: white;
+         padding: 14px;
+         position: relative;
+         box-shadow: 0 0 10px #C371FF;
+      }
+      hr{
+         border: 0;
+         background: #6044A7;
+         height: 1px;
+         margin: 30px 5vw;
+      }
+      /*-------------ABOUT--------------*/
+   </style>
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+   <header>
+      <nav>
+         <div class="left">
+            Ishant's Portfolio
+         </div>
+         <div class="right">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Projects</a> </li>
+               <li><a href="#">Contact Me</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="intro">
+         <div class="leftsection">
+            
+            <div class="text">
+               Hi my name is <span class="ishant">
+                  Ishant
+               </span> and i am a passionate
+               <span id="element"></span>
+            </div>
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+         </div>
+         <div class="rightsection">
+            <img src="/images/Picsart_25-04-03_16-27-30-101.png" alt="">
+         </div>
+      </section>
+      <hr>
+      <section class="about">
+         <div class="leftsection">
+            
+         </div>
+         <div class="rightsection">
+            
+         </div>
+      </section>
+   </main>
+   <script src="main.js"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+      var typed = new Typed('#element', {
+         strings: ['<i><b>Web Developer<b></i>.', '<i>video editor</i>.'],
+         typeSpeed: 50,
+      });
+   </script>
 </body>
+
 </html>
