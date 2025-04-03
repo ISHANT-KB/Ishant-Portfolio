@@ -121,6 +121,68 @@
          margin: 30px 5vw;
       }
       /*-------------ABOUT--------------*/
+      .about {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      
+      .about>div {
+         margin: 20px;
+      }
+      
+      .about .rightsection {
+         width: 40%;
+         height: 500px;
+         font-size: 15px;
+         align-content: center;
+         justify-content: center;
+      }
+      
+      .about .leftsection {
+         width: 40%;
+         height: 500px;
+         align-items: center;
+         justify-content: center;
+      }
+      
+      .about .leftsection img {
+         border-radius: 50%;
+         width: 100%;
+         box-shadow: 0 0 20px #35BCC6;
+      }
+      .about .leftsection h2{
+         margin:10px 0;
+         font-size:2rem;
+         font-weight: 600;
+      }
+      
+      /*-------------FOOTER---------------*/
+      footer {
+   background-color: #161A48;
+   
+}
+
+.footer {
+   display: flex;
+   margin: 10px 10vw;
+   justify-content: space-evenly;
+}
+
+.footer ul {
+   list-style: none;
+}
+
+.footer>div {
+   width: 170px;
+}
+
+footer .footer-rights {
+   text-align: center;
+   color: gray;
+   padding: 12px;
+   background-color: black;
+}
    </style>
 </head>
 
@@ -160,14 +222,60 @@
       </section>
       <hr>
       <section class="about">
+         
          <div class="leftsection">
-            
+            <h2>About</h2>
+            <img src="/images/Picsart_25-04-03_16-27-30-101.png" alt="" />
          </div>
          <div class="rightsection">
             
+            <p>
+               Hello! I'm <b>Ishant Kumar Bag</b>, a class 12th student passionate about technology and continuous learning. I have experience in Python,SQL and web development, and I'm always eager to expand my skill set.
+            </p><br>
+            <p>
+               Currently, I'm working on a website named <b>KnowledgeVerse</b> while honing my development skills.
+            </p><br>
+            <p>
+               Beyond coding, I enjoy drawing and reading psychology articals, as they help me explore creativity and human behavior. I believe in lifelong learning and constantly seek new skills to improve myself.
+            </p>
          </div>
       </section>
    </main>
+   <hr>
+   <footer>
+      <div class="footer">
+         <div class="footer-first">
+            <h3>Ishant's developer portfolio</h3>
+         </div>
+         <div class="footer-second">
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact Me</li>
+            </ul>
+         </div>
+         <div class="footer-third">
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact Me</li>
+            </ul>
+         </div>
+         <div class="footer-fourth">
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact Me</li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-rights">
+         www.ishantsportfolio.com | All rights reserved
+      </div>
+   </footer>
    <script src="main.js"></script>
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
    <script>
