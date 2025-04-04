@@ -188,7 +188,146 @@
          padding: 12px;
          background-color: black;
       }
+      
+      
+      /*======contact form=========*/
+      .contact-me {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         margin: 5px 0;
+      }
+      
+      .contact-me>div {
+         width: 40%;
+         margin: 8px 0;
+         height: 460px;
+      }
+      
+      .contact-me .rightsection {
+         border: 1px solid gray;
+         background: transparent;
+         display: flex;
+         justify-content: center;
+         border-radius: 10px;
+         box-shadow: 0 0 25px #9B3ECD;
+         border: 1px transparent #9B3ECD;
+      }
+      
+      .contact-me .rightsection input {
+         height: 20px;
+      }
+      
+      .contact-me .rightsection .name-box {
+         width: 100%;
+         margin: 3px 10px;
+         color: wheat;
+      }
+      
+      .contact-me .rightsection .name-box input {
+         width: 90%;
+         border-radius: 10px;
+         height: 37px;
+         outline: none;
+         background: transparent;
+         border: 2px solid #723D85;
+         padding: 0 3px;
+         transition: 0.5s;
+      }
+      
+      .contact-me .rightsection .name-box input:hover {
+         width: 92%;
+         border-radius: 10px;
+         height: 45px;
+         box-shadow: 0 0 10px #00FFBA;
+         background: transparent;
+         border: 2px solid #723D85;
+         z-index: 5;
+      }
+      
+      .contact-me .rightsection .name-box input::placeholder {
+         color: white;
+         font-size: 1.03rem;
+      }
+      
+      .contact-me .rightsection .name-box textarea {
+         width: 90%;
+         border-radius: 10px;
+         height: 170px;
+         outline: none;
+         background: transparent;
+         border: 2px solid #723D85;
+         padding: 2px 5px;
+      }
+      
+      .contact-me .rightsection .name-box textarea::placeholder {
+         color: white;
+         font-size: 1.03rem;
+      }
+      
+      .contact-me .rightsection button {
+         width: 90%;
+         margin: 3px 14px;
+         height: 3rem;
+         border-radius: 20px;
+         border: 2px solid #292F77;
+         font-size: 1.5rem;
+         font-weight: 500;
+         background: #292F77;
+         color: white;
+         transition: 0.5s;
+      }
+      
+      .contact-me .rightsection button:hover {
+         width: 92%;
+         margin: 3px 14px;
+         height: 3rem;
+         border-radius: 20px;
+         color: #00F8FF;
+         box-shadow: 0 0 10px #00F8FF;
+         text-shadow: 0 0 2px cyan;
+      }
+      
+      .contact-me .rightsection .heading3 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: gray;
+         text-shadow: 0 0 5px #0A1818;
+         margin: 7px;
+      }
+      .contact-me .leftsection{
+         
+      }
+      .contact-me .leftsection h3{
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
+      }
+      .contact-me .leftsection h3:hover{
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
+      
+      .contact-me .leftsection b{
+         color: red;
+         font-weight: 600;
+         font-size: 1.2rem;
+      }
+      .contact-me .leftsection p{
+         margin: 10px 0;
+         transition: 1s;
+      }
+      .contact-me .leftsection p:hover {
+         margin: 10px 0;
+         transform: translateY(5px);
+         font-size: 1.2rem;
+         text-shadow: 0 0 10px red;
+ }
    </style>
+   
 </head>
 
 <body>
@@ -255,7 +394,36 @@
       </section>
       <hr>
       <section class="contact-me">
-         
+         <div class="leftsection">
+            <h3>Contact Me</h3>
+            <p><b>Email:</b> ishantkrbag2007@gmail.com</p>
+            <p><b>Contact-no:</b> +916206915530</p>
+            <p><b>Note:</b>use the above given details to contact or the contact form given in the website</p>
+         </div>
+         <div class="rightsection">
+            <form action="">
+               <div class="heading3">
+                  <h3>Contact Me</h3>
+               </div>
+               <div class="name-box">
+                  <input type="text" name="Name" id="Name" placeholder="Your Name" />
+               </div>
+               <div class="name-box">
+                  <input type="text" name="Email" id="Email" placeholder="Your Email ID" />
+               </div>
+               <div class="name-box">
+                  <input type="text" name="phone" id="phone" placeholder="Your Phone Number" />
+               </div>
+               <div class="name-box">
+                  <input type="text" name="subject" id="subject" placeholder="Your Subject" />
+               </div>
+               <div class="name-box">
+                  <textarea name="message" id="message" rows="8" cols="40" placeholder="Your Message"></textarea>
+               </div>
+               <button type="submit">Send</button>
+            </form>
+         </div>
+      </section>
       </section>
    </main>
    <footer>
@@ -297,7 +465,7 @@
    <script>
       var typed = new Typed('#element', {
          strings: ['<i><b>Web Developer<b></i>.', '<i>video editor</i>.'],
-         typeSpeed: 50,
+         typeSpeed: 45,
       });
    </script>
 </body>
