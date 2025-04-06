@@ -21,6 +21,9 @@
          background-color: rgb(0, 0, 33);
          color: white;
       }
+      html{
+         scroll-behavior: smooth;
+      }
       
       nav {
          display: flex;
@@ -466,6 +469,8 @@
       var typed = new Typed('#element', {
          strings: ['<i><b>Web Developer<b></i>.', '<i>video editor</i>.'],
          typeSpeed: 45,
+         backspeed: 100,
+         loop: true
       });
    </script>
 </body>
