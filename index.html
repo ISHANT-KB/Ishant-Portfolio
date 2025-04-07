@@ -21,7 +21,8 @@
          background-color: rgb(0, 0, 33);
          color: white;
       }
-      html{
+      
+      html {
          scroll-behavior: smooth;
       }
       
@@ -160,9 +161,10 @@
       }
       
       .about .leftsection h2 {
-         margin: 10px 0;
-         font-size: 2rem;
-         font-weight: 600;
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
       }
       
       /*-------------FOOTER---------------*/
@@ -299,36 +301,86 @@
          text-shadow: 0 0 5px #0A1818;
          margin: 7px;
       }
-      .contact-me .leftsection{
-         
-      }
-      .contact-me .leftsection h3{
+      
+      .contact-me .leftsection {}
+      
+      .contact-me .leftsection h3 {
          font-size: 40px;
          font-weight: 700;
          color: #F70000;
          text-shadow: 0 0 10px #FF00AE;
       }
-      .contact-me .leftsection h3:hover{
+      
+      .contact-me .leftsection h3:hover {
          font-size: 40px;
          font-weight: 700;
          color: #F70000;
          text-shadow: 0 0 10px #FF00AE;
       }
-      .contact-me.leftsection b{
+      
+      .contact-me.leftsection b {
          color: red;
          font-weight: 600;
          font-size: 1.2rem;
       }
-      .contact-me .leftsection p{
+      
+      .contact-me .leftsection p {
          margin-top: 10px;
          transition: 1.8s;
       }
+      
       .contact-me .leftsection .p:hover {
          margin: 0 0;
          transform: translateY(5px);
          font-size: 1.1rem;
          text-shadow: 0 0 10px red;
- }
+      }
+      
+      /*================services======================*/
+      .services {
+         margin: 0 80px;
+      }
+      
+      .services h3 {
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
+      }
+      
+      .services .container {
+         
+         display: flex;
+         flex-wrap: wrap;
+         
+      }
+      
+      .services .container .box {
+         margin: 20px;
+         height: 300px;
+         width: 300px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px 5px #513990;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transition: transform 1s ease, box-shadow 1s ease;
+         cursor: pointer;
+      }
+      
+      .services .container .box:hover {
+         margin: 20px;
+         height: 300px;
+         width: 300px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px 5px #513990;
+         background: linear-gradient(45deg, #ff0000, #0000ff);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transform: translateY(-10px) scale(1.02);
+         
+      }
    </style>
    
 </head>
@@ -341,17 +393,17 @@
          </div>
          <div class="right">
             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Projects</a> </li>
-               <li><a href="#">Contact Me</a></li>
+               <li><a href="#intro">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#projects">Projects</a> </li>
+               <li><a href="#contact">Contact Me</a></li>
             </ul>
          </div>
       </nav>
    </header>
    <main>
-      <section class="intro">
+      <section class="intro" id="intro">
          <div class="leftsection">
             
             <div class="text">
@@ -368,7 +420,7 @@
          </div>
       </section>
       <hr>
-      <section class="about">
+      <section class="about" id="about">
          
          <div class="leftsection">
             <h2>About</h2>
@@ -388,15 +440,24 @@
          </div>
       </section>
       <hr>
-      <section class="services">
+      <section class="services" id="services">
+         <h3>Services</h3>
+         <div class="container">
+            <div class="box">
+               <h4>UI/UX design</h4>
+            </div>
+            <div class="box">
+               <h4>Web development</h4>
+            </div>
+            
+         </div>
+      </section>
+      <hr>
+      <section class="projects" id="projects">
          
       </section>
       <hr>
-      <section class="projects">
-         
-      </section>
-      <hr>
-      <section class="contact-me">
+      <section class="contact-me" id="contact">
          <div class="leftsection">
             <h3>Contact Me</h3>
             <p class="p"><b>Email:</b> ishantkrbag2007@gmail.com</p>
