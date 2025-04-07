@@ -90,6 +90,11 @@
          border-radius: 50%;
          width: 100%;
          box-shadow: 0 0 20px #35BCC6;
+         transition: 1s ease;
+      }
+      
+      #my-pic:hover {
+         transform: scale(1.05);
       }
       
       #element {
@@ -108,7 +113,7 @@
          padding: 10px;
          position: relative;
          box-shadow: 0 0 10px #541D7C;
-         transition: 0.5s;
+         transition: 0.5s ease;
       }
       
       .intro .leftsection .btn:hover {
@@ -158,6 +163,7 @@
          border-radius: 50%;
          width: 100%;
          box-shadow: 0 0 20px #35BCC6;
+         transition: 1s ease;
       }
       
       .about .leftsection h2 {
@@ -338,7 +344,7 @@
       
       /*================services======================*/
       .services {
-         margin: 0 80px;
+         margin: 0 40px;
       }
       
       .services h3 {
@@ -360,7 +366,7 @@
          height: 300px;
          width: 300px;
          border-radius: 10px;
-         box-shadow: 0 0 10px 5px #513990;
+         box-shadow: 0 4px 10px 5px #281865;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -373,13 +379,104 @@
          height: 300px;
          width: 300px;
          border-radius: 10px;
-         box-shadow: 0 0 10px 5px #513990;
-         background: linear-gradient(45deg, #ff0000, #0000ff);
+         box-shadow: 0 4px 10px 5px #513990;
+         background: linear-gradient(45deg, rgb(3, 3, 58), rgb(0, 0, 33));
+         color:#6E2EB4;
          display: flex;
          justify-content: center;
          align-items: center;
          transform: translateY(-10px) scale(1.02);
          
+      }
+      
+      /*==========skills=============*/
+      .skills {
+         padding: 2rem;
+         border-radius: 12px;
+      }
+      
+      .skills h2 {
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
+         margin-bottom: 20px;
+      }
+      
+      .skill-box {
+         
+         margin: 20px;
+      }
+      
+      .skill-box span {
+         font-weight: bold;
+      }
+      
+      .skill-bar {
+         background: #ddd;
+         height: 10px;
+         border-radius: 5px;
+         overflow: hidden;
+         margin-top: 5px;
+      }
+      
+      .skill-fill {
+         height: 100%;
+         background: #7c4dff;
+         border-radius: 5px;
+      }
+      
+      /*============my projects===========*/
+      .projects {
+         padding: 2rem;
+      }
+      
+      .projects h2 {
+         font-size: 40px;
+         font-weight: 700;
+         color: #F70000;
+         text-shadow: 0 0 10px #FF00AE;
+         margin-bottom: 20px;
+      }
+      
+      .projects-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 1.5rem;
+      }
+      
+      .project-card {
+         padding: 1.5rem;
+         border-radius: 12px;
+         box-shadow: 0 4px 20px #281865;
+         transition: transform 0.3s;
+      }
+      
+      .project-card:hover {
+         transform: translateY(-5px) scale(1.03);
+      }
+      
+      .project-card h3 {
+         font-size: 1.3rem;
+         margin-bottom: 0.5rem;
+      }
+      
+      .project-card p {
+         font-size: 0.95rem;
+         color: #555;
+         margin-bottom: 1rem;
+      }
+      
+      .project-card a {
+         color: #7c4dff;
+         text-decoration: none;
+         font-weight: bold;
+         border-bottom: 1px solid transparent;
+         transition: border-bottom 0.3s;
+      }
+      
+      .project-card a:hover {
+         border-bottom: 1px solid #7c4dff;
       }
    </style>
    
@@ -396,6 +493,7 @@
                <li><a href="#intro">Home</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#services">Services</a></li>
+               <li><a href="#skills">Skills</a></li>
                <li><a href="#projects">Projects</a> </li>
                <li><a href="#contact">Contact Me</a></li>
             </ul>
@@ -416,7 +514,7 @@
             <button class="btn">Visit Github</button>
          </div>
          <div class="rightsection">
-            <img src="/images/Picsart_25-04-03_16-27-30-101.png" alt="">
+            <img src="/images/Picsart_25-04-03_16-27-30-101.png" id="my-pic" alt="">
          </div>
       </section>
       <hr>
@@ -424,7 +522,7 @@
          
          <div class="leftsection">
             <h2>About</h2>
-            <img src="/images/Picsart_25-04-03_16-27-30-101.png" alt="" />
+            <img src="/images/Picsart_25-04-03_16-27-30-101.png" id="my-pic" alt="" />
          </div>
          <div class="rightsection">
             
@@ -453,8 +551,61 @@
          </div>
       </section>
       <hr>
+      <section class="skills" id="skills">
+         <h2>My Skills</h2>
+         <div class="skill-box">
+            <span>HTML</span>
+            <div class="skill-bar">
+               <div class="skill-fill" style="width:90%"></div>
+            </div>
+         </div>
+         <div class="skill-box">
+            <span>CSS</span>
+            <div class="skill-bar">
+               <div class="skill-fill" style="width:70%"></div>
+            </div>
+         </div>
+         <div class="skill-box">
+            <span>Javascript</span>
+            <div class="skill-bar">
+               <div class="skill-fill" style="width:10%"></div>
+            </div>
+         </div>
+         <div class="skill-box">
+            <span>Python</span>
+            <div class="skill-bar">
+               <div class="skill-fill" style="width:50%"></div>
+            </div>
+         </div>
+         <div class="skill-box">
+            <span>SQL</span>
+            <div class="skill-bar">
+               <div class="skill-fill" style="width:65%"></div>
+            </div>
+         </div>
+      </section>
+      <hr>
       <section class="projects" id="projects">
-         
+         <h2>My Projects</h2>
+         <div class="projects-grid">
+            <div class="project-card">
+               <h3>Portfolio Website</h3>
+               <p>A personal website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+               <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+            
+            <div class="project-card">
+               <h3>Python Calculator</h3>
+               <p>A simple Python app that performs basic arithmetic operations using user input.</p>
+               <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
+            
+            <div class="project-card">
+               <h3>Floating-Point Error Demo</h3>
+               <p>A mini project that explains precision issues in Python through examples and visuals.</p>
+               <a href="#" target="_blank" rel="noopener noreferrer">Watch Video</a>
+            </div>
+         </div>
       </section>
       <hr>
       <section class="contact-me" id="contact">
