@@ -478,6 +478,77 @@
       .project-card a:hover {
          border-bottom: 1px solid #7c4dff;
       }
+      /* ========== Responsive Design for Mobile ========== */
+@media (max-width: 768px) {
+   nav {
+      flex-direction: column;
+      height: auto;
+   }
+
+   nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+   }
+
+   nav ul li {
+      margin: 10px 0;
+   }
+
+   .intro, .about, .contact-me {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .intro .leftsection,
+   .intro .rightsection,
+   .about .leftsection,
+   .about .rightsection,
+   .contact-me .leftsection,
+   .contact-me .rightsection {
+      width: 90%;
+      height: auto;
+   }
+
+   .intro .leftsection {
+      font-size: 1.8rem;
+   }
+
+   .about .rightsection {
+      font-size: 1rem;
+   }
+
+   .services .container {
+      justify-content: center;
+   }
+
+   .services .container .box {
+      width: 90%;
+      height: auto;
+   }
+
+   .skills, .projects {
+      padding: 1rem;
+   }
+
+   .projects-grid {
+      grid-template-columns: 1fr;
+   }
+
+   footer .footer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer > div {
+      margin-bottom: 20px;
+      width: 90%;
+      text-align: center;
+   }
+
+   .contact-me .rightsection button {
+      font-size: 1.1rem;
+   }
+}
    </style>
    
 </head>
